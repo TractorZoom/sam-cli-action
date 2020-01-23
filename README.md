@@ -6,7 +6,7 @@ Github action for using the [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli
 
 ```yaml
 - name: sam build
-  uses: tractorzoom/sam-cli
+  uses: TractorZoom/sam-cli-action@master
   with:
     sam_command: "build"
   env:
@@ -14,7 +14,7 @@ Github action for using the [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli
     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     AWS_DEFAULT_REGION: us-east-1
 - name: sam deploy
-  uses: tractorzoom/sam-cli
+  uses: TractorZoom/sam-cli-action@master
   with:
     sam_command: "deploy"
   env:
