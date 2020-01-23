@@ -1,0 +1,19 @@
+name: "AWS SAM CLI Github Action"
+description: "Run AWS SAM commands via Github Actions"
+author: "tractorzoom"
+branding:
+  icon: "terminal"
+  color: "blue"
+inputs:
+  sam_version:
+    description: "AWS SAM version to install."
+    default: "latest"
+  sam_command:
+    description: "AWS SAM subcommand to execute."
+    required: true
+  actions_comment:
+    description: "Whether or not to comment on pull requests."
+    default: false
+runs:
+  using: "docker"
+  image: "./Dockerfile"
