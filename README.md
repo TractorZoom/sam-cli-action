@@ -2,7 +2,7 @@
 
 Github action for using the [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli) to build and deploy serverless applications written in node 10.x and python 3.8.
 
-### Getting Started:
+### Getting Started
 
 1. Add `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_DEFAULT_REGION` in Settings > Secrets.
 
