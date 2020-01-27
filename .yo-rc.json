@@ -1,0 +1,15 @@
+{
+  "@tractorzoom/generator-dev-tools": {
+    "promptValues": {
+      "circleCI": false,
+      "commitlint": false,
+      "gitHubIssues": true,
+      "gitHubPullRequestTemplate": true,
+      "prettier": false,
+      "renovate": false,
+      "semanticRelease": false,
+      "terraform": false,
+      "s3Deploy": false
+    }
+  }
+}
