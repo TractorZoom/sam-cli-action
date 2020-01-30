@@ -14,6 +14,9 @@ inputs:
   actions_comment:
     description: "Whether or not to comment on pull requests."
     default: false
+  github_package_registry_token:
+    description: "Github package registry token to install dependencies outside of npm"
+    default: ""
 runs:
   using: "docker"
   image: "./Dockerfile"
