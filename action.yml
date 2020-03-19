@@ -17,6 +17,9 @@ inputs:
   github_package_registry_token:
     description: "Github package registry token to install dependencies outside of npm"
     default: ""
+  directory:
+    description: "directory in which to execute sam command."
+    default: "./"
 runs:
   using: "docker"
   image: "./Dockerfile"
