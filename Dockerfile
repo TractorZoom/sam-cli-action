@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.8-nodejs10-alpine
+FROM nikolaik/python-nodejs:python3.7-nodejs10-alpine
 
 ENV SAM_CLI_TELEMETRY 0
 
