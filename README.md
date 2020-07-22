@@ -1,8 +1,8 @@
 # @TractorZoom/sam-cli-action
 
-_Tractor Zoom primarily works in Node.js so this action has NOT been tested extensively with Python. As always, new features, bug fixes, and other contributions are always welcome! Please submit a PR or an Issue._
+_Tractor Zoom primarily works in Node.js so this action has NOT been tested extensively with Python & Go. As always, new features, bug fixes, and other contributions are always welcome! Please submit a PR or an Issue._
 
-Github action for using the [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli) to build and deploy serverless applications written in node 12.x and python 3.8.
+Github action for using the [AWS SAM CLI](https://github.com/awslabs/aws-sam-cli) to build and deploy serverless applications written in node 12.x, python 3.8 and go 1.14.6 as well as with custom build makefiles.
 
 ### Getting Started:
 
