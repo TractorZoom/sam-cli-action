@@ -10,25 +10,6 @@ function parseInputs(){
 	fi
 }
 
-function installAwsSam(){
-	echo "Install aws-sam-cli ${INPUT_SAM_VERSION}"
-	if [ "${INPUT_SAM_VERSION}" == "latest" ]; then
-		pip install aws-sam-cli >/dev/null 2>&1
-		if [ "${?}" -ne 0 ]; then
-			echo "Failed to install aws-sam-cli ${INPUT_SAM_VERSION}"
-		else
-			echo "Successful install aws-sam-cli ${INPUT_SAM_VERSION}"
-		fi
-	else
-		pip install aws-sam-cli==${INPUT_SAM_VERSION} >/dev/null 2>&1
-		if [ "${?}" -ne 0 ]; then
-			echo "Failed to install aws-sam-cli ${INPUT_SAM_VERSION}"
-		else
-			echo "Successful install aws-sam-cli ${INPUT_SAM_VERSION}"
-		fi
-	fi
-}
-
 function runSam(){
 	if [ "${INPUT_GITHUB_PACKAGE_REGISTRY_TOKEN}" == "" ]; then
 		echo "//npm.pkg.github.com/:_authToken=${INPUT_GITHUB_PACKAGE_REGISTRY_TOKEN}" > ~/.npmrc
@@ -83,7 +64,6 @@ function gotoDirectory(){
 
 function main(){
 	parseInputs
-	installAwsSam
 	gotoDirectory
 	runSam
 }

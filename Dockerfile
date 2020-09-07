@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.8-nodejs12-alpine
+FROM https://registry.hub.docker.com/r/vukomir/aws-sam-cli
 
 ENV SAM_CLI_TELEMETRY 0
 
