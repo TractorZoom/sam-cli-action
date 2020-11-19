@@ -63,6 +63,10 @@ ${output}
 	fi
 
 	if [ "${exitCode}" == "1" ]; then
+		if [ "${fail_command}" != "" ]; then 
+			echo "Executing fail command; ${fail_command@Q}";
+			eval "${fail_command}";
+		fi
 		exit 1
 	fi
 }
