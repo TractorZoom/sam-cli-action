@@ -11,6 +11,9 @@ inputs:
   sam_command:
     description: "AWS SAM subcommand to execute."
     required: true
+  fail_command:
+    description: "Command to run on sam failing (to get logs etc.)"
+    required: false
   actions_comment:
     description: "Whether or not to comment on pull requests."
     default: false
